@@ -1,4 +1,3 @@
-```{r}
 Xn=c(1,4,9,8,7,1,2)
 Modele <- function(p, Xn, nb_iterations){
   nb_tranches<- length(Xn)
@@ -24,8 +23,3 @@ Modele <- function(p, Xn, nb_iterations){
   Modelisation <- as.matrix(Modelisation)
   image(0:nb_iterations, 1:nb_tranches, t(Modelisation),col = heat.colors(100, alpha = 1, rev = TRUE), xlab="années", ylab="tranches d'âges")
 }
-```
-
-```{r}
-mean(mtcars$mpg)
-```
