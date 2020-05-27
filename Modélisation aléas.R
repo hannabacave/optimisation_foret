@@ -1,5 +1,5 @@
-Modele <- function(p, nb_tranches, nb_iterations){
-  Xn <- as.matrix(sample(nb_tranches, nb_tranches))
+Modele <- function(p, Xn, nb_iterations){
+  Xn <- as.matrix(Xn)
   A <- as.matrix(cbind(c(1, rep(0, nb_tranches-1)), rbind(diag(1, nrow=nb_tranches -1, ncol=nb_tranches - 1), rep(0, nb_tranches-1))))
   vecteur <- seq(1:nb_tranches)
   S <- sum(Xn)
